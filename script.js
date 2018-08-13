@@ -123,7 +123,7 @@ const bestThing = "The best thing about a boolean is even if you are wrong you a
 
     // //Number 17
     let newDiv17 = document.createElement("div");
-    newDiv17.textContent = JSON.stringify("Katas 4-17: The index number of where 'Only' starts is " + bestThing.indexOf("only"));
+    newDiv17.textContent = JSON.stringify("Katas 4-17: The index number of where 'Only' starts at " + bestThing.indexOf("only"));
 
     let currentDiv17 = document.getElementById("div17");
     document.body.insertBefore(newDiv17, currentDiv17);
@@ -136,34 +136,39 @@ const bestThing = "The best thing about a boolean is even if you are wrong you a
     document.body.insertBefore(newDiv18, currentDiv18);
 
     // //Number 19
-
     let newDiv19 = document.createElement("div");
-    newDiv19.textContent = JSON.stringify("Katas 4-19: " + gotCitiesCSV.split(", "));
+    let newArray19 = gotCitiesCSV.split(",");
 
-    let currentDiv19 = document.getElementById("div19");
-    document.body.insertBefore(newDiv19, currentDiv19);
-
-    for (let i = 0; i < gotCitiesCSV.length; i++) {
-        if (gotCitiesCSV[i] == 'aa' || gotCitiesCSV[i] == 'ee' || gotCitiesCSV[i] == 'ii' || gotCitiesCSV[i] == 'oo' || gotCitiesCSV[i] == 'uu');
-        console.log(gotCitiesCSV);
-     }
-
-
+    let fa19 = [];
+    for (let i = 0; i < newArray19.length; i += 1) {
+        if (newArray19[i].includes('aa') || newArray19[i].includes('ee') || newArray19[i].includes('ii') || newArray19[i].includes('oo') || newArray19[i].includes('uu')){
+        fa19.push(newArray19[i]);
+    }
+         }
+         newInfo19 = document.createTextNode(JSON.stringify("Katas 4-19: " + fa19));
+     let currentDiv19 = document.getElementById("div19");
+     document.body.insertBefore(newInfo19, currentDiv19);
 
 
     // //Number 20
-    // let newDiv20 = document.createElement("div");
-    // newDiv20.textContent = JSON.stringify("Katas 4-20: " + lotrCitiesArray.endsWith("or"));
+    let newDiv20 = document.createElement("div")
+    let fa20 = [];
 
-    // let currentDiv20 = document.getElementById("div20");
-    // document.body.insertBefore(newDiv20, currentDiv20);
+    for (let i = 0; i < lotrCitiesArray.length; i += 1) {
+        if (lotrCitiesArray[i].endsWith("or")) {
+            fa20.push(lotrCitiesArray[i])
+        }
+    }
+    newInfo20 = document.createTextNode(JSON.stringify("Katas 4-20: " + fa20));
+    let currentDiv20 = document.getElementById("div20");
+    document.body.insertBefore(newInfo20, currentDiv20);
 
-    // //Number 12
-    // let newDiv12 = document.createElement("div");
-    // newDiv12.textContent = JSON.stringify("Katas 4-12: " + bestThing.slice(0, 14));
+    // //Number 21
+    // let newDiv21 = document.createElement("div");
+    // newDiv21.textContent = JSON.stringify("Katas 4-21: " + bestThing.slice(0, 14));
 
-    // let currentDiv12 = document.getElementById("div12");
-    // document.body.insertBefore(newDiv12, currentDiv12);
+    // let currentDiv21 = document.getElementById("div21");
+    // document.body.insertBefore(newDiv21, currentDiv21);
 
     // //Number 12
     // let newDiv12 = document.createElement("div");
