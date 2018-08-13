@@ -56,14 +56,125 @@ const bestThing = "The best thing about a boolean is even if you are wrong you a
 
     //Number 8
     let newDiv8 = document.createElement("div");
-    newDiv8.textContent = JSON.stringify("Katas 4-8" + lotrCitiesArray.splice(-6, 1));
+    newDiv8.textContent = JSON.stringify("Katas 4-8: Removed " + lotrCitiesArray.splice(-6, 1));
+    console.log(lotrCitiesArray);
 
     let currentDiv8 = document.getElementById("div8");
     document.body.insertBefore(newDiv8, currentDiv8);
 
     //Number 9
     let newDiv9 = document.createElement("div");
-    newDiv9.textContent = JSON.stringify("Katas 4-9: " + lotrCitiesArray.splice(6));
+    newDiv9.textContent = JSON.stringify("Katas 4-9: Removed " + lotrCitiesArray.splice(5));
 
     let currentDiv9 = document.getElementById("div9");
     document.body.insertBefore(newDiv9, currentDiv9);
+    console.log(lotrCitiesArray);
+
+    //number 10
+    let newDiv10 = document.createElement("div");
+    newDiv10.textContent = JSON.stringify("Katas 4-10: Check Console Log for re-add " + lotrCitiesArray.splice(2, 0, 'Rohan'));
+
+    let currentDiv10 = document.getElementById("div10");
+    document.body.insertBefore(newDiv10, currentDiv10);
+    console.log(lotrCitiesArray);
+
+    //Number 11
+    let newDiv11 = document.createElement("div");
+    newDiv11.textContent = JSON.stringify("Katas 4-11: " + lotrCitiesArray.splice(5, 1, 'Deadest Marshes') + " changed.  Check Console.");
+
+    let currentDiv11 = document.getElementById("div11");
+    document.body.insertBefore(newDiv11, currentDiv11);
+    console.log(lotrCitiesArray);
+
+    //Number 12
+    let newDiv12 = document.createElement("div");
+    newDiv12.textContent = JSON.stringify("Katas 4-12: " + bestThing.slice(0, 14));
+
+    let currentDiv12 = document.getElementById("div12");
+    document.body.insertBefore(newDiv12, currentDiv12);
+
+    //Number 13
+    let newDiv13 = document.createElement("div");
+    newDiv13.textContent = JSON.stringify("Katas 4-13: " + bestThing.slice(-12));
+
+    let currentDiv13 = document.getElementById("div13");
+    document.body.insertBefore(newDiv13, currentDiv13);
+
+    // //Number 14
+    let newDiv14 = document.createElement("div");
+    newDiv14.textContent = JSON.stringify("Katas 4-14: " + bestThing.slice(23, -43));
+
+    let currentDiv14 = document.getElementById("div14");
+    document.body.insertBefore(newDiv14, currentDiv14);
+
+    // //Number 15
+    let newDiv15 = document.createElement("div");
+    newDiv15.textContent = JSON.stringify("Katas 4-15: " + bestThing.substr(-12));
+
+    let currentDiv15 = document.getElementById("div15");
+    document.body.insertBefore(newDiv15, currentDiv15);
+
+    // //Number 16
+    let newDiv16 = document.createElement("div");
+    newDiv16.textContent = JSON.stringify("Katas 4-16: " + bestThing.substr(23, 15));
+
+    let currentDiv16 = document.getElementById("div16");
+    document.body.insertBefore(newDiv16, currentDiv16);
+
+    // //Number 17
+    let newDiv17 = document.createElement("div");
+    newDiv17.textContent = JSON.stringify("Katas 4-17: The index number of where 'Only' starts is " + bestThing.indexOf("only"));
+
+    let currentDiv17 = document.getElementById("div17");
+    document.body.insertBefore(newDiv17, currentDiv17);
+
+    // //Number 18
+    let newDiv18 = document.createElement("div");
+    newDiv18.textContent = JSON.stringify("Katas 4-18: The index number of the last word is " + bestThing.lastIndexOf("bit"));
+
+    let currentDiv18 = document.getElementById("div18");
+    document.body.insertBefore(newDiv18, currentDiv18);
+
+    // //Number 19
+
+    let newDiv19 = document.createElement("div");
+    newDiv19.textContent = JSON.stringify("Katas 4-19: " + gotCitiesCSV.split(", "));
+
+    let currentDiv19 = document.getElementById("div19");
+    document.body.insertBefore(newDiv19, currentDiv19);
+
+    for (let i = 0; i < gotCitiesCSV.length; i++) {
+        if (gotCitiesCSV[i] == 'aa' || gotCitiesCSV[i] == 'ee' || gotCitiesCSV[i] == 'ii' || gotCitiesCSV[i] == 'oo' || gotCitiesCSV[i] == 'uu');
+        console.log(gotCitiesCSV);
+     }
+
+
+
+
+    // //Number 20
+    // let newDiv20 = document.createElement("div");
+    // newDiv20.textContent = JSON.stringify("Katas 4-20: " + lotrCitiesArray.endsWith("or"));
+
+    // let currentDiv20 = document.getElementById("div20");
+    // document.body.insertBefore(newDiv20, currentDiv20);
+
+    // //Number 12
+    // let newDiv12 = document.createElement("div");
+    // newDiv12.textContent = JSON.stringify("Katas 4-12: " + bestThing.slice(0, 14));
+
+    // let currentDiv12 = document.getElementById("div12");
+    // document.body.insertBefore(newDiv12, currentDiv12);
+
+    // //Number 12
+    // let newDiv12 = document.createElement("div");
+    // newDiv12.textContent = JSON.stringify("Katas 4-12: " + bestThing.slice(0, 14));
+
+    // let currentDiv12 = document.getElementById("div12");
+    // document.body.insertBefore(newDiv12, currentDiv12);
+
+    // //Number 12
+    // let newDiv12 = document.createElement("div");
+    // newDiv12.textContent = JSON.stringify("Katas 4-12: " + bestThing.slice(0, 14));
+
+    // let currentDiv12 = document.getElementById("div12");
+    // document.body.insertBefore(newDiv12, currentDiv12);
