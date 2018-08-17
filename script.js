@@ -80,7 +80,8 @@ document.body.insertBefore(newDiv10, currentDiv10);
 
 //Number 11
 let newDiv11 = document.createElement("div");
-newDiv11.textContent = JSON.stringify("Katas 4-11: " + lotrCitiesArray.splice(5, 1, 'Deadest Marshes') + lotrCitiesArray);
+lotrCitiesArray.splice(5, 1, 'Deadest Marshes')
+newDiv11.textContent = JSON.stringify("Katas 4-11: " + lotrCitiesArray);
 
 let currentDiv11 = document.getElementById("div11");
 document.body.insertBefore(newDiv11, currentDiv11);
@@ -204,13 +205,13 @@ else {
 }
     //Number 24
     let newDiv24 = document.createElement("div");
-    newDiv24.textContent = JSON.stringify("Katas 4-24: " + lotrCitiesArray.indexOf("Murkwood"));
+    newDiv24.textContent = JSON.stringify("Katas 4-24: " + lotrCitiesArray.indexOf("Mirkwood"));
 
     let currentDiv24 = document.getElementById("div24");
     document.body.insertBefore(newDiv24, currentDiv24);
 
     //Number 25
-    let newDiv25 = document.createElement("div");
+    let newDiv25 = document.createElement("div"); 
     let newArray25 = lotrCitiesArray
 
 const citiesWithTwoWords =
@@ -221,6 +222,7 @@ const citiesWithTwoWords =
 const newInfo25 = document.createTextNode(JSON.stringify("Katas 4-25: " + citiesWithTwoWords));
 let currentDiv25 = document.getElementById("div25");
 document.body.insertBefore(newInfo25, currentDiv25);
+
 
     //Number 26
     let newDiv26 = document.createElement("div");
